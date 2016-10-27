@@ -43,7 +43,6 @@ function jiggleButton() {
     .transition('jiggle')
   ;
   myTimeout = myTimeout + 10000;
-  console.log(myTimeout);
   window.setTimeout(jiggleButton, myTimeout);
 }
 var myTimeout = 15000;
