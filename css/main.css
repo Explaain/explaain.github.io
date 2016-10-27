@@ -304,13 +304,17 @@ a.typeform-share.button {
   color: #6354f3;
 }
 .highlight.pink {
-  color: #da368f;
+  color: #ff6678;
 }
 .highlight.grey {
   color: #777;
 }
 
 
+.max-width-large {
+  margin: auto;
+  max-width: 1000px;
+}
 .max-width {
   margin: auto;
   max-width: 900px;
@@ -359,7 +363,7 @@ a.typeform-share.button {
   margin: 0 15px;
   /*font-weight: bold;*/
   border-radius: 30px;
-  color: #6354f3;
+  color: #FF6678;
   background: #eee;
   transition: background 0.4s;
 }
@@ -368,7 +372,7 @@ a.typeform-share.button {
 }
 
 .landing-panel {
-  margin: 4em auto;
+  margin: 4em auto -4em auto;
   padding: 3em;
   max-width: 1200px;
   color: #666;
@@ -379,10 +383,11 @@ a.typeform-share.button {
 }
 .landing-panel img.landing-bot {
   position: absolute;
-  right: 0;
-  margin-top: -300px;
-  width: 450px;
+  right: 100px;
+  margin-top: -250px;
+  width: 250px;
   z-index: -1;
+  border-radius: 6px;
 }
 .landing-panel img.landing-bot-2 {
   display: none;
@@ -476,6 +481,16 @@ font-size: 18px;
 .panel h4 {
   font-size: 1.3em;
 }
+
+.panel.demos {
+  text-align: center;
+}
+.panel.demos img {
+  margin: 30px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
 .panel.timeline, .panel.features, .panel.faqs {
   /*background: #eee;*/
 }
@@ -508,6 +523,13 @@ font-size: 18px;
 .panel.meet-savi .small {
   margin-top: -2em;
   display: none;
+}
+.panel.features > div > div {
+  max-width: 33%;
+  padding: 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
 }
 .panel.features h2 {
   margin-bottom: -1em;
