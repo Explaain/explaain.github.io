@@ -311,6 +311,8 @@ a.typeform-share.button {
 }
 
 
+
+
 .max-width-large {
   margin: auto;
   max-width: 1000px;
@@ -583,7 +585,7 @@ font-size: 18px;
   list-style:none;
 }
 .panel.footer ul li a {
-  color: #6354f3;
+  color: #FF6678;
   font-weight: bold;
   text-decoration: none;
 }
