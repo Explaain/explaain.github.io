@@ -11,7 +11,7 @@
    ========================================================================== */
 html, body { height: 100%; }
 html {
-    color: #777;
+    color: #666;
     font-size: 1.2em;
     line-height: 1.4;
     font-family: 'Lato', sans-serif;
@@ -307,7 +307,7 @@ a.typeform-share.button {
   color: #ff6678;
 }
 .highlight.grey {
-  color: #777;
+  color: #666;
 }
 
 
@@ -494,6 +494,7 @@ font-size: 18px;
   margin: 30px;
   max-width: 300px;
   max-height: 300px;
+  border-radius: 6px;
 }
 
 .panel.timeline, .panel.features, .panel.faqs {
@@ -534,15 +535,21 @@ font-size: 18px;
   padding: 30px;
   box-sizing: border-box;
   display: inline-block;
+  text-align: center;
   vertical-align: top;
+}
+.panel.features i {
+  font-size: 5em;
+  margin: 0.5em 0 0.1em 0;
+  text-align: center;
+  color: #666;
 }
 .panel.features h2 {
   margin-bottom: -1em;
 }
 .panel.features h3 {
-  margin-top: 4em;
-  text-align: left;
-  color: #777;
+  margin: 0;
+  color: #666;
 }
 .panel.features img {
   margin-top: -1em;
@@ -678,8 +685,8 @@ font-size: 18px;
   .landing-panel img.landing-bot-2 {
     display: block;
     position: relative;
-    margin: -15vw 0 -5vw 0;
-    width: 100%;
+    margin: 0 auto -5vw auto;
+    width: 60%;
     z-index: -1;
   }
   .landing-panel {
@@ -724,7 +731,7 @@ font-size: 18px;
     margin: 2em 0 -1em 0;
     max-width: 100%;
   }
-  .panel.features h3, .panel.features h3 {
+  .panel.features h3 {
     margin: 0;
   }
   .panel.hello {
