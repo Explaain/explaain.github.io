@@ -386,6 +386,10 @@ a.typeform-share.button {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.landing-panel img {
+    -webkit-filter: hue-rotate(-13deg) saturate(140%); /* Safari 6.0 - 9.0 */
+    filter: hue-rotate(-13deg) saturate(140%);
+}
 .landing-panel img.landing-bot {
   position: absolute;
   right: 100px;
@@ -474,14 +478,15 @@ font-size: 18px;
 }
 .panel h2, .panel h3, .panel h4 {
   text-align: center;
-  color: #6354f3;
+  color: #666;
   font-weight: 400;
+  margin: 0.6em 0;
 }
 .panel h2 {
   font-size: 2.5em;
 }
 .panel h3 {
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 .panel h4 {
   font-size: 1.3em;
@@ -490,11 +495,25 @@ font-size: 18px;
 .panel.demos {
   text-align: center;
 }
-.panel.demos img {
-  margin: 30px;
+.panel.demos .demo {
+  display: inline-block;
+  vertical-align: top;
   max-width: 300px;
+  margin: 2em;
+}
+.panel.demos .demo img {
+  margin-top: 1em;
+  max-width: 100%;
   max-height: 300px;
   border-radius: 6px;
+}
+.panel.demos .demo img.png {
+  -webkit-filter: hue-rotate(-8deg) saturate(148%); /* Safari 6.0 - 9.0 */
+  filter: hue-rotate(-8deg) saturate(148%);
+}
+.panel.demos .demo img.gif {
+  -webkit-filter: hue-rotate(-13deg) saturate(140%); /* Safari 6.0 - 9.0 */
+  filter: hue-rotate(-13deg) saturate(140%);
 }
 
 .panel.timeline, .panel.features, .panel.faqs {
@@ -540,12 +559,9 @@ font-size: 18px;
 }
 .panel.features i {
   font-size: 5em;
-  margin: 0.5em 0 0.1em 0;
+  margin: 0.1em;
   text-align: center;
   color: #666;
-}
-.panel.features h2 {
-  margin-bottom: -1em;
 }
 .panel.features h3 {
   margin: 0;
@@ -664,17 +680,20 @@ font-size: 18px;
   .panel h2 {
     font-size: 9vw;
   }
+  .panel h3 {
+    font-size: 6vw;
+  }
   .landing-panel {
     /*margin-top: 0;*/
     padding-top: 0;
     font-size: 3vw;
   }
   .landing-panel h2 {
-    font-size: 10vw;
+    font-size: 9vw;
   }
   .landing-panel h3 {
     padding-top: 0.5em;
-    font-size: 6vw;
+    font-size: 5vw;
   }
   .landing-panel a.typeform-share.button {
     font-size: 2.4em;
@@ -708,6 +727,9 @@ font-size: 18px;
   }
   .panel.timeline img {
      margin: -0.5em 0 0.5em 0;
+  }
+  .panel.demos .demo {
+    margin: 1.5em 0;
   }
   .panel.meet-savi .big {
     display: none;
