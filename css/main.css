@@ -517,8 +517,8 @@ font-size: 18px;
   filter: hue-rotate(-13deg) saturate(140%);
 }
 
-.panel.timeline, .panel.features, .panel.faqs {
-  /*background: #eee;*/
+.panel.demos {
+  /*background: #f0f0f0;*/
 }
 .panel.timeline {
   margin-top: -7em;
@@ -590,6 +590,22 @@ font-size: 18px;
 .panel.hello a.button img {
   width: 1em;
   margin: -0.2em 0.2em 0 -0.05em;
+}
+
+.panel.media {
+  text-align: center;
+  margin-top: -5em;
+}
+.panel.media .publication {
+  display: inline-block;
+  margin: 0 2em 2em 2em;
+}
+.panel.media .publication:hover {
+  opacity: 0.7;
+}
+.panel.media img {
+  vertical-align: middle;
+  max-width: 200px;
 }
 
 .panel.faqs h4 {
@@ -767,6 +783,12 @@ font-size: 18px;
   }
   .panel.hello a.button {
     margin: 0 0 -0.3em 0;
+  }
+  .panel.media {
+    margin-top: 0;
+  }
+  .panel.media .publication, .panel.media .publication img {
+    margin: 0 2em;
   }
 
   .brexit-popup {
