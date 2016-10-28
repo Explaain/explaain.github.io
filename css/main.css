@@ -421,6 +421,7 @@ a.typeform-share.button {
 }
 .landing-panel a {
   text-decoration: none;
+  cursor: pointer;
 }
 .landing-panel a:hover h4 {
   opacity: 0.8;
