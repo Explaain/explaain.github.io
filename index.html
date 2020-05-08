@@ -4,8 +4,18 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Explaain - Augment Your Articles</title>
-        <meta name="description" content="Increase your engagement by 3‑4x with Explaain - interactive fact cards for articles">
+        <meta name="description" content="Increase your engagement by 3‑4x with Explaain. Delight your readers with no extra effort, with our interactive fact cards for news.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="Explaain - Augment Your Articles">
+        <meta property="og:description" content="Increase your engagement by 3‑4x with Explaain - interactive fact cards for articles.">
+        <meta property="og:image" content="http://explaain.com/img/thumbnail2.png">
+        <meta property="og:url" content="http://explaain.com">
+
+        <meta name="twitter:title" content="Explaain - Augment Your Articles">
+        <meta name="twitter:description" content="Increase your engagement by 3‑4x with Explaain - interactive fact cards for articles.">
+        <meta name="twitter:image" content="http://explaain.com/img/thumbnail2.png">
+        <meta name="twitter:card" content="summary_large_image">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
@@ -14,20 +24,43 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/transition.min.css">
         <link rel="stylesheet" href="css/popup.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+        <link href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/components/modal.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
         <!-- Latest compiled and minified CSS -->
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
         <meta name="google-site-verification" content="keflGV1LoE7Of5QslykpsizmBWEeLJJlVkBIFQEReUA" />
     </head>
     <body>
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <!-- <div class="ui modal">
+          <i class="close icon"></i>
+          <div class="header">
+            UK General Election 2017
+          </div>
+          <div class="description">
+            <div class="ui header">Your country needs YOU.</div>
+            <p></p>
+          </div>
+          <div class="actions">
+            <div class="ui black deny button">
+              Nope
+            </div>
+            <div class="ui positive right labeled icon button">
+              Yep, that's me
+              <i class="checkmark icon"></i>
+            </div>
+          </div>
+        </div> -->
 
         <div class="navbar">
           <div class="logo">
@@ -40,16 +73,26 @@
 
         </div>
 
+        <div class="landing-panel ge2017-panel">
+          <a href="https://ge2017.org" target="_blank"><img class="ge2017-image" src="/img/ge2017.gif" alt=""></a>
+          <h2><span class="highlight pink bold">2 million</span> <span>engaged voters</span></h2>
+          <h3><span>We created <a class="highlight pink bold" href="https://ge2017.org" style="text-decoration:underline;" target="_blank">GE2017</a>, the largest voter advice tool the UK has ever seen</span></h3>
+          <form class="email" action="/submit" method="post" enctype="application/x-www-form-urlencoded">
+            <input type="email" name="email" placeholder="Here's my email">
+            <button type="submit" name="submit">Let me know what's next</button>
+          </form>
+        </div>
+
         <div class="landing-panel">
-          <h2><span>Increase your engagement by</span> <span class="highlight pink bold">3&#8209;4x</span></h2>
-          <h3><span><b class="highlight pink">Explaain</b> instantly adds interactive fact cards to all your articles</span></h3>
+          <h2><span>Bring your articles </span> <span class="highlight pink bold">to life</span></h2>
+          <h3><span><b class="highlight pink">Explaain</b> instantly adds interactive fact cards to your entire site</span></h3>
           <img class="landing-bot" src="img/demos/demo-f.gif" alt="" />
           <img class="landing-bot-2" src="img/demos/demo-f.gif" alt="" />
           <!-- <a class="typeform-share button main-button" href="/form" target="_blank">Say hello</a> -->
-          <a class="typeform-share button main-button" onclick="_gs('chat', 'show');" target="_blank">Get beta invite</a>
-          <a href="#why-use-explaain">
+          <a class="typeform-share button main-button" onclick="_gs('event', 'Find out more')" href="http://eepurl.com/bh-wD1" target="_blank">Find out more</a>
+          <a href="#why-use-explaain" class="why-should-i">
             <h4>
-              Why should I?
+              <span>Why should I?</span>
               <span><img class="downarrow no-reveal" src="img/downarrow.png" onclick="_gs('event', 'Why should I?')" alt="" /></span>
             </h4>
           </a>
@@ -108,7 +151,7 @@
               <i class="fa fa-eye" aria-hidden="true"></i>
               <h3><span class="highlight pink">Engage</span> your users</h3>
               <p>
-                Explaain cards make your content interactive and engaging for users. Similar experiments at <span style="font-style: italic;">The Washington Post</span> increased engagement by 3-4x.
+                Explaain cards make your content interactive and engaging for users. Similar experiments at <span style="font-style: italic;">The Washington Post</span> increased engagement by a <span class="highlight pink">whopping 3-4x</span>.
               </p>
             </div>
             <div class="scroll-reveal">
@@ -116,22 +159,22 @@
               <i class="fa fa-bolt" aria-hidden="true"></i>
               <h3>Links up <span class="highlight pink">instantly</span></h3>
               <p>
-                Explaain scans your content and <a onclick="_gs('event', 'automatically links')" class="explaain-link" href="http://api.explaain.com/Person/57b31ba4c38e87110021a439">automatically links</a> it up to Explaain cards, so your articles become interactive instantly.
+                Explaain scans your content and <span class="highlight pink">automatically links it up</span> to Explaain cards, so your <a onclick="_gs('event', 'automatically links')" class="explaain-link" href="http://app.explaain.com/Person/57b31ba4c38e87110021a439">articles become interactive</a> before you can say "user experience".
               </p>
             </div>
             <div class="scroll-reveal">
               <!-- <div class="float-left"><img src="img/clock.png" alt="" /></div> -->
               <i class="fa fa-bed" aria-hidden="true"></i>
-              <h3><span class="highlight pink">No effort</span> required</h3>
+              <h3>Sit back and <span class="highlight pink">relax</span></h3>
               <p>
-                We take care of all the content and tech, so you don't have to. You can install Explaain in minutes, and never worry about it again.
+                We take care of all the content and tech, so you don't have to. You can <span class="highlight pink">install Explaain in seconds</span>, watch it work its magic - and never worry about it again.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="panel demos">
-          <h2 style="color:#666"><span class="highlight pink">Card formats</span></h2>
+        <div class="panel demos" id="card-formats">
+          <h2 style="color:#666">Card <span class="highlight pink">Formats</span></h2>
           <div class="demo">
             <h3><b>Embedded</b> cards</h3>
             <img src="img/demos/demo-a.png" class="png" />
@@ -158,8 +201,27 @@
           </div>
         </div>
 
+        <div class="panel hello">
+          <h2><span>Want to know more?</span> <a class="typeform-share button" onclick="_gs('event', 'Sign up button')" href="http://bit.ly/2gNN5Br" target="_blank"><i class="fa fa-user-o" aria-hidden="true"></i> Sign up</a> </h2>
+        </div>
 
-        <div class="panel media">
+        <div class="panel logos partners">
+          <h2>Who we're <span class="highlight pink">working with</span></h2>
+          <div class="publication">
+            <a target="_blank" href="http://injectproject.eu/"><img src="img/partners/inject.png" style="margin: 30px 0;"></a>
+          </div>
+          <div class="publication">
+            <a target="_blank" href="http://digitalnewsinitiative.com/"><img src="img/partners/googledni.png" style="margin: 50px 0;"></a>
+          </div>
+          <div class="publication">
+            <a target="_blank" href="https://geovation.uk/"><img src="img/partners/geovation.png" style="max-height: 100px"></a>
+          </div>
+          <div class="publication">
+            <a target="_blank" href="https://www.ordnancesurvey.co.uk/"><img src="img/partners/ordnance-survey.jpg" style="margin: 45px 0;"></a>
+          </div>
+        </div>
+
+        <div class="panel logos media">
           <h2>In the <span class="highlight pink">Press</span></h2>
           <div class="publication">
             <a target="_blank" href="http://journalism.co.uk/news/issues-not-news-how-explaain-wants-to-reinvent-the-article/s2/a565019/" style="vertical-align: middle;"><img src="img/media/journalismcouk.gif" style="margin: 50px 0;"></a>
@@ -175,9 +237,6 @@
           </div>
         </div>
 
-        <div class="panel hello" style="display:none;">
-          <h2>Ready to <span><a class="typeform-share button" href="/form" target="_blank"><img src="img/messenger.png" alt="" />say hello</a></span> yet?</h2>
-        </div>
 
         <div class="panel faqs" style="display:none;">
           <div class="max-width-2">
@@ -266,7 +325,7 @@
                     Drop us a message on our Bot and let us know what your thoughts are and we’ll be back in touch. We receive lots of messages but respond to everyone in person (usually within 48 hours) so hang tight.
                   </div>
                   <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa <a href="http://api.explaain.com/Person/57b31ba4c38e87110021a439">Theresa May</a> qui officia deserunt mollit anim id est laborum.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa Theresa May qui officia deserunt mollit anim id est laborum.
                   </p>
                   <div class="explaain" data-keywords="Theresa May"></div>
                 </div>
@@ -309,6 +368,8 @@
         <script src="js/vendor/transition.min.js"></script>
         <script src="js/vendor/popup.min.js"></script>
 
+        <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/components/modal.min.js"></script>
         <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
@@ -324,8 +385,34 @@
         	_gs('GSN-359227-X');
         </script>
 
+
+
         <!--Google Apps for Work verification -->
         <meta name="google-site-verification" content="keflGV1LoE7Of5QslykpsizmBWEeLJJlVkBIFQEReUA" />
+
+        <script type="text/javascript">
+          $('form.email').submit(function() {
+            event.preventDefault();
+            console.log($("form.email input[name=email]").val());
+            $.ajax({
+              url: $("form.email").attr("action"),
+              data: { email: $("form.email input[name=email]").val() },
+              success: function(result) {
+                console.log(result);
+                // $("p#message").html("Hello there " + result.username + "! Number of checkins: " + result.checkIns);
+                $("form.email").hide(500);
+                setTimeout(function() {
+                  $('form.email').html('<p>Thanks for subscribing! Want to say hello? Email <a href="mailto:hi@explaain.com" target="_blank">hi@explaain.com</a></p>')
+                  $("form.email").show(500);
+                },500);
+              },
+              error: function(result) {
+                console.log('hi');
+                $("form.email").prepend('<p style="color:red">Sorry, we couldn\'t process that. Try again?</p>');
+              }
+            });
+          })
+        </script>
 
     </body>
 </html>
